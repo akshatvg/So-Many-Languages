@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .button {
+      background-color: #19A94C;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration-style: solid;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  </style>
+
+  <title>magiCode Practice</title>
+  <link rel="icon" href="../static/Favicon.png">
+  <link rel="stylesheet" href="../stati/css/style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+
+  <link rel="stylesheet" href="../stati/css/index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS - just 4 styling - not required for enlighterjs -->
+  <link rel="stylesheet" href="../static/EnlighterJS-2.12.0/Resources/bootstrap/bootstrap.min.css">
+
+  <!-- Include EnlighterJS Styles -->
+  <link rel="stylesheet" type="text/css" href="../static/EnlighterJS-2.12.0/Build/EnlighterJS.min.css">
+
+  <!-- Monospace Fonts on Google Webfonts !-->
+  <link href="http://fonts.googleapis.com/css?family=Cutive+Mono|Roboto+Mono:400,700,400italic,500,500italic,700italic|Ubuntu+Mono:400,700,400italic,700italic|Droid+Sans+Mono|Source+Code+Pro:400,600"
+    rel="stylesheet" type="text/css">
+
+  <!-- Include MooTools Framework -->
+  <script type="text/javascript" src="../static/EnlighterJS-2.12.0/Resources/MooTools.min.js"></script>
+
+  <!-- Include EnlighterJS -->
+  <script type="text/javascript" src="../static/EnlighterJS-2.12.0/Build/EnlighterJS.min.js"></script>
+
+  <!-- Special Styles -->
+  <style type="text/css">
+    /* custom hover effect using specific css class */
+    .EnlighterJS.myHoverClass li:hover {
+      background-color: #c0c0c0;
+    }
+
+    #overlay {
+      position: fixed;
+      /* Sit on top of the page content */
+      display: none;
+      /* Hidden by default */
+      width: 100%;
+      /* Full width (cover the whole page) */
+      height: 100%;
+      /* Full height (cover the whole page) */
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.767);
+      /* Black background with opacity */
+      z-index: 2;
+      /* Specify a stack order in case you're using a different order for other elements */
+      cursor: pointer;
+      /* Add a pointer on hover */
+    }
+
+    #text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 18px;
+      color: white;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+  </style>
+
+  <meta name="EnlighterJS" content="Advanced javascript based syntax highlighting" data-language="javascript"
+    data-indent="2" data-selector-block="pre" data-selector-inline="code">
+</head>
+
+<body style="background-color: rgba(192, 192, 192, 0.685)">
+  <script>
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
+
+  <div id="overlay">
+    <div id="text" style=" background-color:rgba(38, 158, 80, 0.911)">
+      <div align="right" id="overlazy">
+        <img class="img-responsive" onclick="off()" src="../static/img/icons/close.png" alt="Close" height="55px" width="55px"
+          style="cursor: pointer;padding: 10px;">
+      </div>
+      <h1 style="color: white;" align="center">INSTRUCTIONS</h1>
+
+      <p style="color: white;font-family: 'Open Sans', sans-serif;font-weight: 500; text-align:left;margin-left: 10px;font-size: 17px;margin-top:0px;margin-bottom: 20px;">
+        1) Choose
+        whether you want to Practice/ Compete/ Redeem Hackos (HackerRank points) from the menu.<br><span align="left">&nbsp;&nbsp;&nbsp;-If
+          you
+          choose to Practice a new language, click on
+          the microphone button at the
+          bottom of the black box.<br>&nbsp;&nbsp;&nbsp;-Choose a language you need help
+          with.<br>&nbsp;&nbsp;&nbsp;-Ask magiCode what you
+          need
+          generally like 'i need an if condition' , 'perform addition for me' (syntaxes not
+          required).<br>&nbsp;&nbsp;&nbsp;-
+          Copy
+          the code from the black
+          box into the input side of the compiler (left).<br>&nbsp;&nbsp;&nbsp;-Run it and see the output on
+          the right side of
+          the
+          compiler.</span></br></br>2) You can compete to score points in our HackerRank contest.<br><br>3) You
+        can redeem
+        earned points to buy yourself something you like in the redeem section.
+      </p>
+    </div>
+
+    <script>
+      document.getElementById("overlay").style.display = "block";
+    </script>
+  </div>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-light" style="box-shadow: 1px 2px 10px rgba(1, 1, 1, 1.15);">
+      <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="#" style="color: #19A94C;font-size: 24px;">magiCode</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+          <!--li class="nav-item active">
+            <a class="nav-link" href="http://127.0.0.1:5000/"><span
+                style="color: white;font-weight: 200;font-size: 20px;font-family: Times New Roman, Times, serif;">Home</span></a>
+          </li-->
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span style="color: white;font-weight: 200;font-size: 20px;font-family: Times New Roman, Times, serif;"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.hackerrank.com/magicode-challenges" target="_blank"><span style="color: black;font-weight: 200;font-size: 20px;font-family: Roboto, serif;">Compete</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span style="color: white;font-weight: 200;font-size: 20px;font-family:  Roboto, serif;"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5000/shop"><span style="color: black;font-weight: 200;font-size: 20px;font-family:  Roboto, serif;">Redeem
+                Hackos</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3" style="display: none;"></div>
+      <div class="col-lg-6" style="margin: auto; align-items: center"><br />
+        <div class="card" style="box-shadow: 1px 2px 10px rgba(0, 0, 0, 1.15);border-radius: 6px;">
+          <div class="card-body">
+            <div class="row">
+              <img src="../static/magiCode.png" alt="magiCode" style="display: block;margin-left: auto;margin-right: auto;height: 150px;width: 150px;box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);">
+            </div>
+            <br>
+            <div class=" row">
+              <div class="col-lg-12">
+                <ul id="chat-responses" class="chat-messages" style="width: auto;
+                font-weight: bold;
+                font-family: Arial;
+                height: 40px;
+                padding: 10px;
+                border: 2px solid #19A94C;
+                margin: 0;
+                color: black;"
+                  align="center">Your Command Will Be Displayed Here</ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="EnlighterJSWrapper enlighterEnlighterJSWrapper" id="chat-input">
+
+          </div>
+
+
+          <div class="row">
+            <div class="col-lg-12" align="center">
+              <div class="col-lg-12" align="center">
+                <svg class="mic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                  x="0px" y="0px" viewbox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="margin: auto; align-items: center; height: 70px;">
+                  <path d="M64.825,38.252c-1.024,0-1.853,0.83-1.853,1.853v11.119c0,7.153-5.819,12.972-12.972,12.972s-12.972-5.819-12.972-12.972  V40.105c0-1.024-0.83-1.853-1.853-1.853s-1.853,0.83-1.853,1.853v11.119c0,8.57,6.498,15.648,14.825,16.573v10.258h-6.25  c-1.024,0-1.853,0.83-1.853,1.853c0,1.024,0.83,1.853,1.853,1.853h16.207c1.024,0,1.853-0.83,1.853-1.853  c0-1.024-0.83-1.853-1.853-1.853h-6.25V67.797c8.327-0.925,14.825-8.003,14.825-16.573V40.105  C66.678,39.082,65.849,38.252,64.825,38.252z">
+                  </path>
+                  <path d="M50,61.972c5.926,0,10.748-4.822,10.748-10.748V28.987c0-5.926-4.822-10.748-10.748-10.748S39.252,23.06,39.252,28.987  v22.238C39.252,57.151,44.074,61.972,50,61.972z M42.958,28.987c0-3.883,3.159-7.042,7.042-7.042s7.042,3.159,7.042,7.042v22.238  c0,3.883-3.159,7.042-7.042,7.042s-7.042-3.159-7.042-7.042V28.987z">
+                  </path>
+                  <g>
+                    <path d="M50,95C25.187,95,5,74.813,5,50S25.187,5,50,5s45,20.187,45,45S74.813,95,50,95z M50,7.903   C26.788,7.903,7.903,26.788,7.903,50S26.788,92.097,50,92.097S92.097,73.212,92.097,50S73.212,7.903,50,7.903z">
+                    </path>
+                  </g>
+                </svg>
+              </div>
+              <div align="center" class="recording-status"><b>
+                  <h4>Hi I am magiCode!<br>
+                    Start by choosing your preferred language!</h4>
+                </b>
+              </div>
+            </div>
+          </div>
+          <input type="button" class="button" value="Change Language!" onClick="location.href=location.href" style="border-radius:4px;">
+        </div>
+      </div>
+      <!--<div ><img src="magiCode.png" align="center"></div>!-->
+    </div>
+  </div>
+  <h5 align="right" style="margin: auto;
+  align-items: center;
+  padding-right: 15px;
+  text-decoration-color: #ffffff;
+  color: #19A94C;
+  text-size-adjust: auto;
+  font-size: small;font-weight: 800;">
+    Current Languages: Python ,PHP ,C++ ,Swift </h5><br>
+    <div class="sec-widget" data-widget="8984b8ac6461508722215550136a0b91"></div>
+  <script>
+    SEC_HTTPS = true;
+    SEC_BASE = "compilers.widgets.sphere-engine.com"; 
+    (function(d, s, id){ SEC = window.SEC || (window.SEC = []);
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; 
+      js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);   
+    }(document, "script", "sphere-engine-compilers-jssdk"));
+    </script>
+
+  <script src="../static/js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

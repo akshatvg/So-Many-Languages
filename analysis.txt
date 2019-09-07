@@ -1,0 +1,12 @@
+
+<<== PHP ==>>
+
+-> Logical ( for all lang )
+-> Rendering ( Only Python )
+-> sockets ( Only python for flask )
+-> linking with basic clouds like mysql ( only for python flask)
+
+
+<<== Basic Flask Generation ==>>
+
+linked with php or som o
