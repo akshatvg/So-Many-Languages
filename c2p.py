@@ -119,7 +119,7 @@ def convert(cpp):
     #print(fl)
     sl=[]
     for i in fl:
-        if '#' not in i and 'void' not in i and 'main()' not in i and 'int' not in i:
+        if '#' not in i and 'void' not in i and 'main()' not in i and 'int' not in i and 'using namespace std' not in i and 'return' not in i:
             sl.append(i)
         elif 'for' in i:
             sl.append(i)
@@ -128,7 +128,9 @@ def convert(cpp):
     py_code = []
 
     for i in sl:
-        if 'cin>>' in i:
+        if 'balabala' in i:
+            v=1
+        elif 'cin>>' in i:
             x = ser(i,'>')
             x+=2
             var = i[x:len(i)-1:]

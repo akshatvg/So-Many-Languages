@@ -1,15 +1,11 @@
-#include<iostream>
-#include<conio.h>
-void main()
+#include <iostream>
+using namespace std;
+int main()
 {
 int n,a,b,answer;
-cin>>n;
 cin>>a;
 cin>>b;
-for (int x = 2; x<n; x+2)
-{
-answer = (a+b)/x;
+answer = a+b;
 cout<<answer;
-}
-getch()
+return 0;
 }

@@ -48,15 +48,22 @@ def transform_view():
 def box():
     if request.method == 'POST':
         resp_json = request.get_json()
+        print(resp_json)
         to_convert = resp_json['text']
+        ddown = resp_json['ddown']
 
-        py_list = c2p.convert(to_convert)
-        pycode=''
-        for i in py_list:
-            print(i,end='')
-            pycode+=i
-        time.sleep(2)
-        return json.dumps({"response": pycode}), 200
+        if ddown == 'Python':
+
+            py_list = c2p.convert(to_convert)
+            pycode=''
+            for i in py_list:
+                print(i,end='')
+                pycode+=i
+            time.sleep(2)
+            return json.dumps({"response": pycode}), 200
+        else:
+            return json.dumps({"response": "Come back later for that language"}), 200
+
 
 
 @app.route('/practice')
