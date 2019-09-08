@@ -35,16 +35,24 @@ def transform_view():
     result = transform(file_contents)
 
     print(result)
-    py_list = c2p.convert(result)
-    pycode=''
-    for i in py_list:
-        print(i,end='')
-        pycode+=i
-    #print(pycode)
-    response = make_response(pycode)
-    response.headers["Content-Disposition"] = "attachment; filename=converted_py_code.py"
-    time.sleep(0.8)
-    return response
+    if '#incude' in result:
+        py_list = c2p.convert(result)
+        pycode=''
+        for i in py_list:
+            print(i,end='')
+            pycode+=i
+        #print(pycode)
+        response = make_response(pycode)
+        response.headers["Content-Disposition"] = "attachment; filename=converted_py_code.py"
+        time.sleep(0.8)
+        return response
+    else:
+        php_code = ptp.convert(result+'\n')
+        response = make_response(php_code)
+        response.headers["Content-Disposition"] = "attachment; filename=converted_php_code.php"
+        time.sleep(0.8)
+        return response
+
 
 @app.route('/box', methods=['POST','GET'])
 def box():
