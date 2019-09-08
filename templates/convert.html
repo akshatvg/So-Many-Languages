@@ -146,7 +146,7 @@
                 data: JSON.stringify(respon_json),
                 dataType: "json",
                 success: function (response) {
-                    document.getElementById("send_code").innerHTML = response.response;
+                    document.getElementsByClassName("send_code").innerHTML = response.response;
                 }
             });
         }
