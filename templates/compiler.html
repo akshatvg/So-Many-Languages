@@ -20,6 +20,20 @@
       color: #ED7C89;
       background-color: #FFEAD0;
     }
+
+    .btn2 {
+      box-shadow: 0px 1px 3px black;
+      color: #ED7C8A;
+      background-color: #FFEAD0;
+      border-radius: 5px;
+    }
+
+    .btn2:hover {
+      background-color: #ED7C8A;
+      color: #FFEAD0;
+      box-shadow: 0px 1px 3px black;
+      border-radius: 5px;
+    }
   </style>
 
   <title>Voice to Code Templating</title>
@@ -165,6 +179,14 @@
       </div>
     </div>
   </div>
+
+  <div class="col-12">
+    <div class="container text-right mt-4">
+      <button type="button" onclick="showHide()" class="btn2 SeeMore2" data-toggle="collapse" data-target="#demo"
+        style="outline:none;position:absolute; bottom: 0px;">Hide Compiler</button>
+    </div>
+  </div>
+
   <h5 align="right" style="margin: auto;
   align-items: center;
   padding-right: 15px;
@@ -173,7 +195,7 @@
   text-size-adjust: auto;
   font-size: small;font-weight: 800;">
     Current Languages: Python ,PHP ,C++ ,Swift </h5><br>
-  <div class="sec-widget animated fadeInRight" data-widget="8984b8ac6461508722215550136a0b91"></div>
+  <div class="sec-widget animated fadeInRight" data-widget="8984b8ac6461508722215550136a0b91" id="demo"></div>
   <script>
     SEC_HTTPS = true;
     SEC_BASE = "compilers.widgets.sphere-engine.com";
@@ -184,6 +206,24 @@
       js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, "script", "sphere-engine-compilers-jssdk"));
+  </script>
+
+  <script>
+    $("#demo").off("hide.bs.collapse", function () {
+      $(".SeeMore2").innerText('Show Compiler');
+    });
+    $("#demo").on("show.bs.collapse", function () {
+      $(".SeeMore2").innerText('Hide Compiler');
+    });
+    $('.SeeMore2').click(function () {
+      var $this = $(this);
+      $this.toggleClass('SeeMore2');
+      if ($this.hasClass('SeeMore2')) {
+        $this.text('Show Compiler');
+      } else {
+        $this.text('Hide Compiler');
+      }
+    });
   </script>
 
   <script src="../static/js/index.js"></script>
