@@ -59,7 +59,7 @@ def box():
             for i in py_list:
                 print(i,end='')
                 pycode+=i
-            time.sleep(2)
+            time.sleep(1)
             return json.dumps({"response": pycode}), 200
         else:
             return json.dumps({"response": "Language under development. Try again later!"}), 200

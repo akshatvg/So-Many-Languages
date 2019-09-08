@@ -22,31 +22,31 @@ h6 {
 }
 
 h1 {
-	font-size: 70px;
+	font-size: 50px;
 }
 
 h2 {
-	font-size: 36px;
+	font-size: 26px;
 }
 
 h3 {
-	font-size: 30px;
+	font-size: 20px;
 }
 
 h4 {
-	font-size: 24px;
-}
-
-h5 {
-	font-size: 18px;
-}
-
-h6 {
 	font-size: 16px;
 }
 
-p {
+h5 {
 	font-size: 14px;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+p {
+	font-size: 10px;
 	color: #b4b4b4;
 	line-height: 2;
 }
@@ -84,7 +84,7 @@ ol {
 }
 
 .section-title h2 {
-	font-size: 30px;
+	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -151,7 +151,7 @@ ol {
 
 .site-btn:hover {
 	color: #ED7C8A;
-	background:#FFEAD0; 
+	background: #FFEAD0;
 }
 
 .site-btn.btn-line {
@@ -274,7 +274,7 @@ ol {
 	margin: 0 auto;
 	display: block;
 	float: right;
-	margin-right: 450px;
+	padding: 20px;
 }
 
 .main-menu li {
@@ -289,7 +289,6 @@ ol {
 	font-weight: 600;
 	color: #fff;
 	padding: 8px 5px 0;
-	margin-left: 50px;
 }
 
 .header-right {
