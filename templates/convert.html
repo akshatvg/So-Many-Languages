@@ -7,15 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="../static/img/favicon.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
-        defer>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" defer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../static/css/convert.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css">
@@ -32,9 +29,10 @@
             background-color: rgba(0, 0, 0, 0.692);
             color: whitesmoke;
             margin-left: 10px;
+            padding: 10px;
             margin-right: 10px;
         }
-
+        
         #get_code {
             height: 30vh;
             width: 40vh;
@@ -42,6 +40,7 @@
             background-color: rgba(0, 0, 0, 0.692);
             color: whitesmoke;
             margin-left: 10px;
+            padding: 10px;
             margin-right: 10px;
         }
     </style>
@@ -56,35 +55,28 @@
 
         <header class="logo">
             <a href="#" class="animated lightSpeedIn"><img src="../static/img/Logo.png" /></a>
-            <h4 style="text-transform: capitalize; color: rgba(180, 119, 45, 0.877);"
-                class="mt-3 animated rotateInDownRight"><b>Hello There!</b>
+            <h4 style="text-transform: capitalize; color: rgba(180, 119, 45, 0.877);" class="mt-3 animated rotateInDownRight"><b>Hello There!</b>
             </h4>
         </header>
 
         <ul>
             <a href="http://127.0.0.1:5000/practice" style="text-decoration: none;">
-                <li tabindex="0" class="icon-dashboard animated rotateInDownLeft"><span class="newcol"
-                        style="color: black;">Voice to Code
+                <li tabindex="0" class="icon-dashboard animated rotateInDownLeft"><span class="newcol" style="color: black;">Voice to Code
                         Templating</span>
                 </li>
             </a>
             <a href="http://127.0.0.1:5000" style="text-decoration: none;">
-                <li tabindex="0" class="icon-customers animated rotateInDownLeft"><span class="newcol"
-                        style="color: black;">Converting
+                <li tabindex="0" class="icon-customers animated rotateInDownLeft"><span class="newcol" style="color: black;">Converting
                         Languages</span>
                 </li>
             </a>
             <a href="http://bit.ly/SoManyLanguages" style="text-decoration: none;" target="_blank">
-                <li tabindex="0" class="animated rotateInDownLeft"><img src="../static/img/hackerearth.png"
-                        style="width: 20px; height: 20px;position: absolute; left: 14px;" class="d-inline"><span
-                        class="newcol d-inline" style="color: black;">Compete
+                <li tabindex="0" class="animated rotateInDownLeft"><img src="../static/img/hackerearth.png" style="width: 20px; height: 20px;position: absolute; left: 14px;" class="d-inline"><span class="newcol d-inline" style="color: black;">Compete
                         and Practice</span>
                 </li>
             </a>
             <a href="http://127.0.0.1:5000/shop" style="text-decoration: none;" target="_blank">
-                <li tabindex="0" class="animated rotateInDownLeft"><img src="../static/img/shopping-cart.png"
-                        style="width: 20px; height: 20px;position: absolute; left: 14px;" class="d-inline"><span
-                        class="newcol d-inline" style="color: black;">Rewards</span>
+                <li tabindex="0" class="animated rotateInDownLeft"><img src="../static/img/shopping-cart.png" style="width: 20px; height: 20px;position: absolute; left: 14px;" class="d-inline"><span class="newcol d-inline" style="color: black;">Rewards</span>
                 </li>
             </a>
         </ul>
@@ -96,8 +88,7 @@
                 <h1 class="text-center animated bounceIn" style="margin-top: 5vh;font-weight: bold;">So Many Languages
                 </h1>
             </div>
-            <div class="text-center animated bounceIn">Convert a programming language's code to another accurately
-                within seconds.
+            <div class="text-center animated bounceIn">Convert a programming language's code to another accurately within seconds.
             </div>
         </div>
 
@@ -116,13 +107,13 @@
         </div>
 
         <div class="col-md-12 mt-3">
-            <div class="container animated slideInLeft"
-                style="padding: 20px;background-color:rgba(0, 0, 0, 0.2);border-radius: 30px;">
+            <div class="container animated slideInLeft" style="padding: 20px;background-color:rgba(0, 0, 0, 0.2);border-radius: 30px;">
                 <div class="text-center">
                     <div class="mt-4">
-                        <code
-                            class="html"><textarea id="get_code" placeholder="//Code You Coded (To Be Converted)"></textarea></code>
-                        <textarea id="send_code" placeholder="#Code Converted By Us"></textarea>
+                        <textarea id="get_code" placeholder="//Code You Coded (To Be Converted)" spellcheck="false">//Your Code:&#13;&#10;
+                        </textarea>
+                        <textarea id="send_code" placeholder="#Code Converted By Us" spellcheck="false">#Converted Code:&#13;&#10;
+                        </textarea>
                     </div>
                     <button type="submit" onclick="sendcodez()" class="btn mt-3">Convert On Site</button>
                     <div class="mt-3" style="color: whitesmoke;">(Or)</div>
@@ -140,12 +131,8 @@
         </div>
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
         function sendcodez() {
             var d_down = document.getElementById("ddown").value;
@@ -153,10 +140,10 @@
             var c_code = document.getElementById("get_code").value;
             console.log(c_code);
             respon_json = {
-                "text": c_code,
-                "ddown": d_down
-            }
-            //console.log('loooooop')
+                    "text": c_code,
+                    "ddown": d_down
+                }
+                //console.log('loooooop')
             $.ajax({
                 type: "POST",
                 contentType: "application/json;charset=utf-8",
@@ -164,7 +151,7 @@
                 traditional: "true",
                 data: JSON.stringify(respon_json),
                 dataType: "json",
-                success: function (response) {
+                success: function(response) {
                     document.getElementById("send_code").innerHTML = response.response;
                 }
             });
@@ -173,4 +160,4 @@
 
 </body>
 
-</html>
+</html>Ï
