@@ -62,7 +62,7 @@ def box():
             time.sleep(2)
             return json.dumps({"response": pycode}), 200
         else:
-            return json.dumps({"response": "Come back later for that language"}), 200
+            return json.dumps({"response": "Language under development. Try again later!"}), 200
 
 
 
