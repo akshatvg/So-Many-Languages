@@ -8,6 +8,7 @@ import urllib
 import os
 import c2p
 import time
+import ptp
 
 
 
@@ -42,6 +43,7 @@ def transform_view():
     #print(pycode)
     response = make_response(pycode)
     response.headers["Content-Disposition"] = "attachment; filename=converted_py_code.py"
+    time.sleep(0.8)
     return response
 
 @app.route('/box', methods=['POST','GET'])
@@ -61,6 +63,11 @@ def box():
                 pycode+=i
             time.sleep(1)
             return json.dumps({"response": pycode}), 200
+        elif ddown == 'PHP':
+            php_code = ptp.convert(to_convert+'\n')
+            time.sleep(1)
+            return json.dumps({"response": php_code}), 200
+
         else:
             return json.dumps({"response": "Language under development. Try again later!"}), 200
 
