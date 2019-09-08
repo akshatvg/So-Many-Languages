@@ -18,19 +18,31 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/default.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js"></script>
     <title>So Many Languages Converter</title>
 
     <style>
-        #editor {
+        #send_code {
             height: 30vh;
             width: 40vh;
             display: inline-block;
+            background-color: rgba(0, 0, 0, 0.692);
+            color: whitesmoke;
+            margin-left: 10px;
+            margin-right: 10px;
         }
 
-        #editor1 {
+        #get_code {
             height: 30vh;
             width: 40vh;
             display: inline-block;
+            background-color: rgba(0, 0, 0, 0.692);
+            color: whitesmoke;
+            margin-left: 10px;
+            margin-right: 10px;
         }
     </style>
 
@@ -80,7 +92,7 @@
             <div class="container">
                 <div class="text-center animated bounceIn">
                     <label>Choose desired language:&nbsp;</label>
-                    <select class="ddown">
+                    <select id="ddown">
                         <option value="C++">C++</option>
                         <option value="Python" selected>Python</option>
                         <option value="Swift">Swift</option>
@@ -95,8 +107,9 @@
                 style="padding: 20px;background-color:rgba(0, 0, 0, 0.2);border-radius: 30px;">
                 <div class="text-center">
                     <div class="mt-4">
-                        <div id="editor" class="get_code">//Code You Coded (To Be Converted)</div>
-                        <div id="editor1" class="send_code">#Code Converted By Us</div>
+                        <code
+                            class="html"><textarea id="get_code" placeholder="//Code You Coded (To Be Converted)"></textarea></code>
+                        <textarea id="send_code" placeholder="#Code Converted By Us"></textarea>
                     </div>
                     <button type="submit" onclick="sendcodez()" class="btn mt-3">Convert On Site</button>
                     <div class="mt-3" style="color: whitesmoke;">(Or)</div>
@@ -120,18 +133,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="../static/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
     <script>
-        var editor = ace.edit("editor");
-        editor.session.setMode("ace/mode/c_cpp");
-    </script>
-    <script>
-        var editor = ace.edit("editor1");
-        editor.session.setMode("ace/mode/python");
         function sendcodez() {
-            var d_down = document.getElementsByClassName("ddown");
+            var d_down = document.getElementById("ddown").value;
             console.log(d_down);
-            var c_code = document.getElementsByClassName("get_code");
+            var c_code = document.getElementById("get_code").value;
             console.log(c_code);
             respon_json = {
                 "text": c_code,
@@ -146,7 +152,7 @@
                 data: JSON.stringify(respon_json),
                 dataType: "json",
                 success: function (response) {
-                    document.getElementsByClassName("send_code").innerHTML = response.response;
+                    document.getElementById("send_code").innerHTML = response.response;
                 }
             });
         }
