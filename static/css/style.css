@@ -136,12 +136,12 @@ ol {
 	display: inline-block;
 	text-align: center;
 	font-size: 14px;
-	color: #fff;
+	color: #FFEAD0;
 	padding: 12px 30px;
 	min-width: 138px;
 	font-weight: 500;
 	border: none;
-	background: #414141;
+	background: #ED7C8A;
 	cursor: pointer;
 	line-height: normal;
 	-webkit-transition: all 0.3s ease 0s;
@@ -150,7 +150,8 @@ ol {
 }
 
 .site-btn:hover {
-	color: #fff;
+	color: #ED7C8A;
+	background:#FFEAD0; 
 }
 
 .site-btn.btn-line {
