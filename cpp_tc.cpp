@@ -2,10 +2,10 @@
 using namespace std;
 int main()
 {
-int n,a,b,answer;
+int n,a,b,z;
 cin>>a;
 cin>>b;
-answer = a+b;
-cout<<answer;
+z = a+b;
+cout<<z;
 return 0;
 }

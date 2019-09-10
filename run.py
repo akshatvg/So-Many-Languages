@@ -837,5 +837,5 @@ default:
 if __name__=='__main__':
     c=1
     intent=[]
-    webbrowser.open('https://51a4b62a.ngrok.io/')
+    webbrowser.open('http://127.0.0.1:5000/')
     app.run(debug=False)
