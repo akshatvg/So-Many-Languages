@@ -61,6 +61,11 @@ SML helps:
 4) Learn and earn at the same time through the Compete and Rewards page.
 
 
+## Demo video
+
+<http://bit.ly/SML_Demo>
+
+
 ## Target audience
 
 Students- learning has no age & developers need to keep learning to stay updated with trends.
