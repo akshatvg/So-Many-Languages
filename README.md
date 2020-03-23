@@ -1,11 +1,13 @@
 # So Many Languages
 
-Web application to help convert one programming language's code to another within seconds while also enabling the user to generate code using just logic.
+This will help eager students who know logic of the program to develop a project without even knowing the syntax of the programming language. All the person has to do is say what is needed. 
+
+Eg: "I need a nested for loop." will return a nested for loop. Users can also translate a language's code to another using the same software. This project can cause a disruption in the educational sector. Tech will become more accessible to all and this Developer Tool will encourage people to understand and solve problems rather than just copy it. There's also a practice section along with rewards for learning, so students learn and earn at the same time (working as an incentive).
 
 
 ## Inspiration
 
-Our team consists of 3 developers and all of us realised that we face the same problem- it's very hard to memorise all syntaxes since each language has its own different syntax. This not only causes confusion but also takes up a lot of our time.
+Our team consists of several developers and all of us realised that we face the same problem- it's very hard to memorise all syntaxes since each language has its own different syntax. This not only causes confusion but also takes up a lot of our time.
 
 
 ## What it does
@@ -87,18 +89,22 @@ We intend to provide free code templating and conversion for particular common l
 
 We built the assistive educative technology using:
 
-1) HTML/ CSS/ JavaScript/ Bootstrap (Frontend Web Development), 
+1) HTML/ CSS/ JavaScript/ Bootstrap (Frontend web development), 
 
-2) Flask (Backend Web Development), 
+2) Flask (Backend web development), 
 
-3) IBM Watson (To Gather User's Intent- NLU), 
+3) IBM Watson (To gather User's Intent- NLU), 
 
-4) PHP, C++, Python (Test Programming Languages).
+4) PHP, C++, Python (Test programming languages).
+
+5) GCP (Deploy the project).
+
+6) AWS (Speech-To-Text).
 
 
 ## Challenges we ran into
 
-Other than the jet lag we still have from travelling all the way from India and hence lack of sleep, we came across a few technical challenges too. Creating algorithms to convert PHP code wasn't very easy at first, but we managed to pull it off in the end.
+We came across a few technical challenges like creating algorithms to convert PHP code wasn't very easy at first, but we managed to pull it off in the end.
 
 
 ## Accomplishments that we're proud of
@@ -108,12 +114,6 @@ Creating a one of its kind product.
 1) We are the first ever educative technological assistant to help learn and migrate to programming languages while also giving users a platform to practice and test how much they learnt using language specific problems.
 
 2) We also help users completely convert one language's code to another language's code accurately within seconds.
-
-
-## What we learned
-
-This was our team's first international hackathon. We met hundreds of inspiring coders and developers who tried and tested our product and gave their views and suggestions which we then tried implementing. We saw how other teams functioned and what we may have been doing wrong before.
-We also each learnt a technical skill for the project (Akshat learnt Animations and basics of Flask, Anand learnt using IBM Watson to its greatest extent and Sandeep learnt PHP just to implement it into this project).
 
 
 ## What's next for So Many Languages
