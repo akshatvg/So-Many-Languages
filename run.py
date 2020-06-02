@@ -1,6 +1,8 @@
 from flask import Flask, flash, redirect, render_template, url_for, request, make_response
 from flask_cors import CORS
-import ibm_watson
+import json
+from ibm_watson import AssistantV1
+from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 import re
 import webbrowser
 import requests,json
@@ -105,16 +107,18 @@ def get_names():
         command = resp_json['text']
         if command=='cplusplus':
             command='open c++'
-    assistant = ibm_watson.AssistantV1(
-    version='2019-02-28',
-    iam_apikey='u1N9ThXmpZUk_-1_F1AaAw-11BbBXFtCbonmmerHbnFI',
-    url='https://gateway-wdc.watsonplatform.net/assistant/api'
+    authenticator = IAMAuthenticator('u1N9ThXmpZUk_-1_F1AaAw-11BbBXFtCbonmmerHbnFI')
+    assistant = AssistantV1(
+        version='2019-02-28',
+        authenticator = authenticator
     )
 
+    assistant.set_service_url('https://gateway-wdc.watsonplatform.net/assistant/api')
+
     response = assistant.message(
-        workspace_id='7cb1c0fc-6e91-4b63-9e93-8a30028bd58e',
+        workspace_id='6cfaa408-9ed3-4e80-adcc-fb84f58b435f',
         input={
-            'text': command #use the <text> we get with flask
+            'text': command
         }
     ).get_result()
 
