@@ -5,9 +5,7 @@
 Web application to help convert one programming language's code to another within seconds while also enabling the user to generate code using just logic.
 
 <p align="center">
-<a href="https://timemator.akshatvg.com">
 <img src="https://github.com/akshatvg/So-Many-Languages/blob/master/static/img/Logo.png" width="120px" height="120px" alt="So Many Languages Logo"/>
-</a>
 </p>
 
 ![Generic badge](https://img.shields.io/badge/So_Many_Languages-To_Learn-orange) 
