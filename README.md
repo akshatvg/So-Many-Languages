@@ -15,9 +15,9 @@ Web application to help convert one programming language's code to another withi
 
 ## Requirements
 
-[![GitHub top language](https://img.shields.io/github/languages/top/akshatvg/So-Many-Languages?logo=python&style=social)](https://github.com/akshatvg/)
+[![GitHub top language](https://img.shields.io/github/languages/top/akshatvg/So-Many-Languages?logo=javascript&style=social)](https://github.com/akshatvg/)
 
-The source code of this project is written in **`HTML/CSS/JS, Flask`**. So, you need to install `requirements.txt` to run this project.
+The source code of this project is written in **`HTML/CSS/JS, Flask, IBM Watson`**. So, you need to install `requirements.txt` to run this project.
 
 ## Inspiration
 Our team consists of 3 developers and all of us realised that we face the same problem- it's very hard to memorise all syntaxes since each language has its own different syntax. This not only causes confusion but also takes up a lot of our time.
