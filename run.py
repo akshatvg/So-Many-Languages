@@ -116,7 +116,7 @@ def get_names():
     assistant.set_service_url('https://gateway-wdc.watsonplatform.net/assistant/api')
 
     response = assistant.message(
-        workspace_id='6cfaa408-9ed3-4e80-adcc-fb84f58b435f',
+        workspace_id='97afbe1c-dd6b-4d91-8022-8d483eae2174',
         input={
             'text': command
         }
