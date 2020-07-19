@@ -30,10 +30,10 @@ SML helps:
 2) Immediate language conversion
 3) One of its kind language freedom
 4) Voice to code templating
-
 5) Code accurately
 6) Code programs by just knowing the logic (no need to remember syntaxes)
 7) Take tests and practice while also earning rewards for the same
+8) Simple plain English to code
 
 ## How to run
 ```
