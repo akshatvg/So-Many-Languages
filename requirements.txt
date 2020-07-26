@@ -3,8 +3,8 @@ chardet==3.0.4
 Click==7.0
 Flask==1.1.1
 Flask-Cors==3.0.8
-ibm-cloud-sdk-core==0.5.1
-ibm-watson==3.4.0
+ibm-cloud-sdk-core==1.5.1
+ibm-watson==4.5.0
 idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.10.1
