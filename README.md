@@ -88,6 +88,9 @@ We also each learnt a technical skill for the project (Akshat learnt Animations 
 ## What's next for So Many Languages
 We intend to add support for more programming languages as soon as possible while also making sure that any upcoming bugs are rectified.
 
+## Clone Succeeded but Checkout Failed?
+If you are not able to clone this repository, check out [this link](https://stackoverflow.com/questions/22041752/github-clone-succeeded-but-checkout-failed).
+
 ## Need help?
 Feel free to contact me via [Facebook](https://www.facebook.com/akshatvg).
 
