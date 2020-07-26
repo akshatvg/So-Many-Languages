@@ -36,7 +36,7 @@
   "license": "MIT",
   "bugs": "https://github.com/AndiDittrich/EnlighterJS/issues",
   "devDependencies": {
-    "bootstrap": "~3.3.4",
+    "bootstrap": "~3.4.1",
     "less": "~2.5.1",
     "less-plugin-autoprefix": "~1.4.2",
     "uglify-js": "~2.6.0",
