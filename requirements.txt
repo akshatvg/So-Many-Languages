@@ -16,3 +16,4 @@ six==1.12.0
 urllib3==1.25.3
 websocket-client==0.48.0
 Werkzeug==0.15.6
+gunicorn==20.0.4
