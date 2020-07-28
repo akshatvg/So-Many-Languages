@@ -73,6 +73,8 @@ We built the assistive educative technology using:
 3) IBM Watson (To Gather User's Intent- NLU), 
 4) PHP, C++, Python (Test Programming Languages).
 
+<img src="https://i.ibb.co/Fqwv0Zv/So-Many-Languages-Working.png" alt="Flow Diagram">
+
 ## Challenges we ran into
 Other than the jet lag we still have from travelling all the way from India and hence lack of sleep, we came across a few technical challenges too. Creating algorithms to convert PHP code wasn't very easy at first, but we managed to pull it off in the end.
 
@@ -96,7 +98,7 @@ Feel free to contact me via [Facebook](https://www.facebook.com/akshatvg).
 
 Invite me to connect on [LinkedIn](https://www.linkedin.com/in/akshatvg/).
 
-[![Facebook](https://img.shields.io/badge/Facebook-add-blue.svg?logo=facebook&logoColor=white)](https://www.facebook.com/akshatvg) [![Quora](https://img.shields.io/badge/Quora-ask-red.svg?logo=quora)](https://www.quora.com/profile/Akshat-Gupta-279) [![Instagram](https://img.shields.io/badge/Instagram-follow-purple.svg?logo=instagram&logoColor=white)](https://www.instagram.com/akshatvg/) [![GitHub](https://img.shields.io/badge/Snapchat-add-yellow.svg?logo=snapchat&logoColor=white)](https://www.snapchat.com/add/akshatvg) [![Medium](https://img.shields.io/badge/Medium-follow-black.svg?logo=medium&logoColor=white)](https://medium.com/@akshatvg)
+[![Facebook](https://img.shields.io/badge/Facebook-add-blue.svg?logo=facebook&logoColor=white)](https://www.facebook.com/akshatvg) [![Quora](https://img.shields.io/badge/Quora-ask-red.svg?logo=quora)](https://www.quora.com/profile/Akshat-Gupta-279) [![Instagram](https://img.shields.io/badge/Instagram-follow-purple.svg?logo=instagram&logoColor=white)](https://www.instagram.com/akshatvg/) [![Snapchat](https://img.shields.io/badge/Snapchat-add-yellow.svg?logo=snapchat&logoColor=white)](https://www.snapchat.com/add/akshatvg) [![Medium](https://img.shields.io/badge/Medium-follow-black.svg?logo=medium&logoColor=white)](https://medium.com/@akshatvg)
 
 
 ```bash
@@ -150,3 +152,14 @@ if (youEnjoyed) {
 ```
 
 -----------
+
+```
+         _        _           _    _____             _        
+    /\   | |      | |         | |  / ____|           | |       
+   /  \  | | _____| |__   __ _| |_| |  __ _   _ _ __ | |_ __ _ 
+  / /\ \ | |/ / __| '_ \ / _` | __| | |_ | | | | '_ \| __/ _` |
+ / ____ \|   <\__ \ | | | (_| | |_| |__| | |_| | |_) | || (_| |
+/_/    \_\_|\_\___/_| |_|\__,_|\__|\_____|\__,_| .__/ \__\__,_|
+                                               | |             
+                                               |_|             
+```
