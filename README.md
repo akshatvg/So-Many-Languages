@@ -73,6 +73,8 @@ We built the assistive educative technology using:
 3) IBM Watson (To Gather User's Intent- NLU), 
 4) PHP, C++, Python (Test Programming Languages).
 
+<img src="https://i.ibb.co/Fqwv0Zv/So-Many-Languages-Working.png" alt="Flow Diagram">
+
 ## Challenges we ran into
 Other than the jet lag we still have from travelling all the way from India and hence lack of sleep, we came across a few technical challenges too. Creating algorithms to convert PHP code wasn't very easy at first, but we managed to pull it off in the end.
 
