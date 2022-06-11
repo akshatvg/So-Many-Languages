@@ -9,7 +9,7 @@ idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.11.3
 MarkupSafe==1.1.1
-PyJWT==1.7.1
+PyJWT==2.4.0
 python-dateutil==2.8.0
 requests==2.22.0
 six==1.12.0
