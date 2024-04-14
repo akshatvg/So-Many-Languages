@@ -5,7 +5,7 @@ Flask==1.1.1
 Flask-Cors==3.0.9
 ibm-cloud-sdk-core==1.5.1
 ibm-watson==4.5.0
-idna==2.8
+idna==3.7
 itsdangerous==1.1.0
 Jinja2==2.11.3
 MarkupSafe==1.1.1
